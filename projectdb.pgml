@@ -1,0 +1,29 @@
+<project>
+    <documents></documents>
+    <classstyles>
+        <classstyle name="dropdown_menu" key="dropdown_menu" class="block hover:bg-yellow-600 hover:text-white mx-1 px-3 py-1 rounded-lg font-bold sm:text-center lg:text-left"></classstyle>
+        <classstyle name="dropdown_back" key="dropdown_back" class="absolute bg-white border delay-100 duration-300 ease-in-out group-hover:scale-100 origin-top py-1 rounded-xl scale-0 shadow-lg text-gray-700 transform transition mt-10 sm:justify-center lg:w-auto sm:w-8/12"></classstyle>
+        <classstyle name="dropdown_btn" key="dropdown_btn" class="flex focus:outline-none font-bold hover:text-yellow-700 items-center outline-none px-4 py-2 sm:justify-center sm:w-full text-gray-700"></classstyle>
+        <classstyle name="menu_btn" key="menu_btn" class="block font-bold hover:bg-yellow-600 hover:font-bold hover:text-white px-0 py-2 rounded-lg text-center lg:px-4 lg:py-2 text-gray-700"></classstyle>
+        <classstyle name="menu_text" key="menu_text" class="px-4 py-2 uppercase sm:text-center lg:text-left"></classstyle>
+        <classstyle name="card" key="card" class="border flex group h-full hover:border items-center rounded-2xl shadow-md hover:border-gray-500 hover:shadow-2xl p-3 flex-col-reverse sm:flex-row">
+            <classstyle name="sm_card" key="card.sm_card" class=" items-end"></classstyle>
+        </classstyle>
+        <classstyle name="text_kolektiv" key="text_kolektiv" class="flex p-6 text-center flex-col sm:text-right w-full"></classstyle>
+        <classstyle name="foto_kolektiv" key="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full"></classstyle>
+        <classstyle name="btn_kolektiv" key="btn_kolektiv" class="bg-white group-hover:bg-yellow-600 group-hover:text-white inline-block mx-auto px-2.5 py-2 rounded-xl text-gray-600 sm:break-all sm:mr-0 text-sm"></classstyle>
+        <classstyle name="pic_sm_card" key="pic_sm_card" class="bg-gray-200 group-hover:bg-gray-300 group-hover:text-gray-700 p-4 rounded-lg text-gray-600 flex items-center sm:w-auto justify-center w-full sm:h-full h-full"></classstyle>
+        <classstyle name="text_sm_card" key="text_sm_card" class="flex flex-col w-full text-center sm:text-right pt-3 sm:pt-0 sm:pr-6"></classstyle>
+        <classstyle name="h2_text" key="h2_text" class="mb-2 mx-4 text-gray-700 text-lg w-auto"></classstyle>
+        <classstyle name="h1_text" key="h1_text" class="font-semibold mx-4 text-2xl text-gray-700 w-auto"></classstyle>
+        <classstyle name="btn_activ" key="btn_activ" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white mb-2 py-2 px-3 lg:mb-0 lg:mr-2">
+            <classstyle name="btn_pasiv" key="btn_activ.btn_pasiv" class=" w-full"></classstyle>
+        </classstyle>
+        <classstyle name="menu_box" key="menu_box" class="mt-2 rounded-md shadow-lg transform transition duration-200 ease-in-out w-full origin-top relative lg:absolute lg:truncate lg:w-auto"></classstyle>
+        <classstyle name="menu_link" key="menu_link" class="block font-semibold bg-transparent rounded-lg focus:text-gray-900 focus:outline-none py-1.5 px-4 hover:bg-yellow-600 hover:text-white focus:bg-gray-200 focus:shadow-outline"></classstyle>
+        <classstyle key="btn_drop" name="btn_drop" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white mb-2 py-2 px-3 lg:mb-0 w-full" count="0"></classstyle>
+        <classstyle name="btn_social" key="btn_social" class="border border-gray-700 hover:bg-yellow-600 rounded-full hover:text-white hover:border-yellow-600 hover:shadow-md w-10 h-10 p-2"></classstyle>
+        <classstyle key="foto_konf" name="foto_konf" class="rounded-lg border w-full h-56 sm:w-auto lg:pl-48 sm:pl-56 sm:h-56 sm:max-h-full sm:min-h-full" count="0"></classstyle>
+        <classstyle key="text_konf" name="text_konf" class="flex p-6 text-center flex-col sm:text-right w-full sm:w-full" count="0"></classstyle>
+    </classstyles>
+</project>
