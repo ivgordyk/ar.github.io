@@ -13,9 +13,9 @@
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     </head>
     <body>
-        <div class="fixed flow-root text-gray-700 w-full sm:pt-4 sm:px-4">
-            <div x-data="{ open: false }" class="bg-white border flex flex-col max-w-screen-xl mx-auto shadow-lg sm:h-auto sm:rounded-xl lg:flex-row lg:items-center lg:justify-between lg:px-8">
-                <div class="flex flex-row items-center justify-between px-4 py-2 sm:p-4">
+        <div class="fixed flow-root text-gray-700 w-full lg:pt-4 lg:px-4">
+            <div x-data="{ open: false }" class="bg-white border flex flex-col max-w-screen-xl mx-auto shadow-lg sm:h-auto lg:flex-row lg:items-center lg:justify-between lg:px-8 lg:rounded-xl">
+                <div class="flex flex-row items-center justify-between px-4 py-2 sm:px-4 sm:py-2 lg:py-4">
                     <a href="index.html" class="font-semibold text-gray-900 tracking-widest" title="Головна сторінка кафедри архітектури"><img src="logo/logo-ar-b2.svg" width="36" class="hover:opacity-95 opacity-75"></a>
                     <button class="focus:outline-none focus:shadow-outline hover:text-yellow-600 rounded-lg lg:hidden" @click="open = !open">
                         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -24,7 +24,7 @@
                         </svg>
                     </button>
                 </div>
-                <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow h-screen hidden overflow-auto pb-16 pt-3 text-center sm:h-auto sm:pt-0 lg:flex lg:flex-row lg:h-auto lg:justify-start lg:overflow-visible lg:pb-0 lg:text-left">
+                <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow h-screen hidden overflow-auto pb-16 pt-3 text-center lg:flex lg:flex-row lg:h-auto lg:justify-start lg:overflow-visible lg:py-0 lg:text-left">
                     <a href="npp.html" data-pg-class-style="btn_activ" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white py-2 px-3 lg:mb-0 lg:mr-2 sm:mx-0 mb-2 mx-2">Колектив</a>
                     <div @click.away="open = false" class="mx-2 relative sm:mx-4 lg:ml-0 lg:mr-2" x-data="{ open: false }">
                         <button @click="open = !open" data-pg-class-style="btn_drop" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white mb-2 py-2 px-3 lg:mb-0 w-full">
@@ -104,11 +104,11 @@
                 </nav>
             </div>
         </div>
-        <section style="background-color: #655656;" class="pb-8 pt-32"> 
+        <section style="background-color: #655656;" class="pb-8 pt-20 lg:pt-32"> 
             <div class="max-w-screen-xl mx-auto px-4"> 
                 <div class="text-left">
                     <p class="text-gray-400">робочі навчальні програми кафедри архітектури</p>
-                    <h2 class="font-bold mb-2 text-4xl text-white">РНП Бакалавр</h2>
+                    <h2 class="font-bold mb-2 text-3xl text-white lg:text-4xl">РНП Бакалавр</h2>
                 </div>                 
             </div>             
         </section>
@@ -124,7 +124,7 @@
                 <div class="mb-2 mx-4 text-gray-700 text-lg w-auto" data-pg-class-style="h2_text"> 
                     <h2 class="text-center">розробка кафедри архітектури</h2> 
                 </div>
-                <div class="mb-8 mx-auto px-4"> 
+                <div class="mb-16 mx-auto px-4"> 
                     <div class="-mx-4 flex flex-wrap justify-center lg:justify-start"> 
                         <div class="p-4 w-full lg:w-6/12"> 
                             <a class="border flex group h-full hover:border rounded-2xl shadow-md hover:border-gray-500 hover:shadow-2xl p-3 flex-col-reverse sm:flex-row  items-end" data-pg-class-style="card.sm_card" href="#"> <div class="flex flex-col w-full text-center sm:text-right pt-3 sm:pt-0 sm:pr-6" data-pg-class-style="text_sm_card">
@@ -140,7 +140,7 @@
                 <div class="mb-2 mx-4 text-gray-700 text-lg w-auto" data-pg-class-style="h2_text"> 
                     <h2 class="text-center">розробка сторонніх кафедр</h2> 
                 </div>
-                <div class="mb-8 mx-auto px-4"> 
+                <div class="mb-16 mx-auto px-4"> 
                     <div class="-mx-4 flex flex-wrap justify-center lg:justify-start"> 
                         <div class="p-4 w-full lg:w-6/12"> 
                             <a href="#" class="border flex group h-full hover:border rounded-2xl shadow-md hover:border-gray-500 hover:shadow-2xl p-3 flex-col-reverse sm:flex-row  items-end" data-pg-class-style="card.sm_card"> <div class="flex flex-col w-full text-center sm:text-right pt-3 sm:pt-0 sm:pr-6" data-pg-class-style="text_sm_card">

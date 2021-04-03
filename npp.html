@@ -13,9 +13,9 @@
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     </head>
     <body>
-        <div class="fixed flow-root text-gray-700 w-full sm:pt-4 sm:px-4">
-            <div x-data="{ open: false }" class="bg-white border flex flex-col max-w-screen-xl mx-auto shadow-lg sm:h-auto sm:rounded-xl lg:flex-row lg:items-center lg:justify-between lg:px-8">
-                <div class="flex flex-row items-center justify-between px-4 py-2 sm:p-4">
+        <div class="fixed flow-root text-gray-700 w-full lg:pt-4 lg:px-4">
+            <div x-data="{ open: false }" class="bg-white border flex flex-col max-w-screen-xl mx-auto shadow-lg sm:h-auto lg:flex-row lg:items-center lg:justify-between lg:px-8 lg:rounded-xl">
+                <div class="flex flex-row items-center justify-between px-4 py-2 sm:px-4 sm:py-2 lg:py-4">
                     <a href="index.html" class="font-semibold text-gray-900 tracking-widest" title="Головна сторінка кафедри архітектури"><img src="logo/logo-ar-b2.svg" width="36" class="hover:opacity-95 opacity-75"></a>
                     <button class="focus:outline-none focus:shadow-outline hover:text-yellow-600 rounded-lg lg:hidden" @click="open = !open">
                         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -24,7 +24,7 @@
                         </svg>
                     </button>
                 </div>
-                <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow h-screen hidden overflow-auto pb-16 pt-3 text-center sm:h-auto sm:pt-0 lg:flex lg:flex-row lg:h-auto lg:justify-start lg:overflow-visible lg:pb-0 lg:text-left">
+                <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow h-screen hidden overflow-auto pb-16 pt-3 text-center lg:flex lg:flex-row lg:h-auto lg:justify-start lg:overflow-visible lg:py-0 lg:text-left">
                     <a href="npp.html" data-pg-class-style="btn_activ" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white py-2 px-3 lg:mb-0 lg:mr-2 sm:mx-0 mb-2 mx-2">Колектив</a>
                     <div @click.away="open = false" class="mx-2 relative sm:mx-4 lg:ml-0 lg:mr-2" x-data="{ open: false }">
                         <button @click="open = !open" data-pg-class-style="btn_drop" class="focus:bg-gray-200 focus:outline-none focus:shadow-outline focus:text-gray-900 font-semibold hover:bg-gray-200 hover:text-gray-900 rounded-lg active:bg-yellow-600 active:text-white mb-2 py-2 px-3 lg:mb-0 w-full">
@@ -104,11 +104,11 @@
                 </nav>
             </div>
         </div>
-        <section style="background-color: #655656;" class="pb-8 pt-32"> 
+        <section style="background-color: #655656;" class="pb-8 pt-20 lg:pt-32"> 
             <div class="max-w-screen-xl mx-auto px-4"> 
-                <div class="text-left">
+                <div>
                     <p class="text-gray-400">колектив кафедри архітектури</p>
-                    <h2 class="font-bold mb-2 text-4xl text-white">Професорсько-викладацький склад</h2>
+                    <h2 class="font-bold mb-2 text-3xl text-white lg:text-4xl">Професорсько-викладацький склад</h2>
                 </div>                 
             </div>             
         </section>
@@ -137,7 +137,7 @@
                                             </g>
                                         </svg>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-image: url('img/doroshenko.jpg'); background-size: cover; background-position: center top;">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-image: url('img/doroshenko.jpg'); background-size: cover; background-position: center top;">
 </div> </a> 
                         </div>
                         <div class="p-4 w-full lg:w-6/12"> 
@@ -155,7 +155,7 @@
                                             </g>
                                         </svg>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-image: url('img/buravchenko.jpg'); background-position: center top; background-size: cover;">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-image: url('img/buravchenko.jpg'); background-position: center top; background-size: cover;">
 </div> </a> 
                         </div>
                         <div class="p-4 w-full lg:w-6/12"> 
@@ -172,7 +172,7 @@
                                             </g>
                                         </svg>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-image: url('img/wait.png'); background-position: center bottom; background-size: cover;">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-image: url('img/wait.png'); background-position: center bottom; background-size: cover;">
 </div> </a> 
                         </div>
                         <div class="p-4 w-full lg:w-6/12"> 
@@ -189,7 +189,7 @@
                                             </g>
                                         </svg>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-size: cover; background-position: center bottom; background-image: url('img/wait.png');">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-size: cover; background-position: center bottom; background-image: url('img/wait.png');">
 </div> </a> 
                         </div>                         
                     </div>                     
@@ -220,7 +220,7 @@
                                             </g>
                                         </svg>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-size: cover; background-position: center top; background-image: url('img/barmashina2.jpg');">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-size: cover; background-position: center top; background-image: url('img/barmashina2.jpg');">
 </div> </a> 
                         </div>                         
                     </div>                     
@@ -251,7 +251,7 @@
                                             </g>
                                         </svg>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-size: cover; background-position: center top; background-image: url('img/hlupin.jpg');">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-size: cover; background-position: center top; background-image: url('img/hlupin.jpg');">
 </div> </a> 
                         </div>
                         <div class="p-4 w-full lg:w-6/12"> 
@@ -268,7 +268,7 @@
                                             </g>
                                         </svg>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-size: cover; background-position: center top; background-image: url('img/pivovarov.jpg');">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-size: cover; background-position: center top; background-image: url('img/pivovarov.jpg');">
 </div> </a> 
                         </div>
                         <div class="p-4 w-full lg:w-6/12"> 
@@ -285,7 +285,7 @@
                                             </g>
                                         </svg>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-size: cover; background-position: center top; background-image: url('img/kostuchenko2.jpg');">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-size: cover; background-position: center top; background-image: url('img/kostuchenko2.jpg');">
 </div> </a> 
                         </div>
                         <div class="p-4 w-full lg:w-6/12"> 
@@ -302,7 +302,7 @@
                                             </g>
                                         </svg>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-size: cover; background-position: center top; background-image: url('img/gordiyk.jpg');">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-size: cover; background-position: center top; background-image: url('img/gordiyk.jpg');">
 </div> </a> 
                         </div>                         
                     </div>                     
@@ -333,7 +333,7 @@
                                             </g>
                                         </svg>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-image: url('img/nechadim.jpg'); background-position: center top; background-size: cover;">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-image: url('img/nechadim.jpg'); background-position: center top; background-size: cover;">
 </div> </a> 
                         </div>
                         <div class="p-4 w-full lg:w-6/12"> 
@@ -350,7 +350,7 @@
                                             </g>
                                         </svg>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-image: url('img/spesichenko.jpg'); background-position: center top; background-size: cover;">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-image: url('img/spesichenko.jpg'); background-position: center top; background-size: cover;">
 </div> </a> 
                         </div>                         
                     </div>                     
@@ -382,7 +382,7 @@
                                         <br>osypenko.olha@npp.nau.edu.ua
                                         <br>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-image: url('img/wait.png'); background-size: cover; background-position: center bottom;">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-image: url('img/wait.png'); background-size: cover; background-position: center bottom;">
 </div> </a> 
                         </div>
                         <div class="p-4 w-full lg:w-6/12"> 
@@ -397,7 +397,7 @@
                                         <br>zhutayeva.nataliya@npp.nau.edu.ua
                                         <br>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-image: url('img/zhutaeva.jpg'); background-size: cover; background-position: center top;">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-image: url('img/zhutaeva.jpg'); background-size: cover; background-position: center top;">
 </div> </a> 
                         </div>
                         <div class="p-4 w-full lg:w-6/12"> 
@@ -412,7 +412,7 @@
                                         <br>taenko@ukr.net
                                         <br>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-image: url('img/ushenko.jpg'); background-position: center top; background-size: cover;">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-image: url('img/ushenko.jpg'); background-position: center top; background-size: cover;">
 </div> </a> 
                         </div>
                         <div class="p-4 w-full lg:w-6/12"> 
@@ -427,7 +427,7 @@
                                         <br>melnyk.olha@npp.nau.edu.ua
                                         <br>
                                     </div>
-                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full pt-96 sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full" style="background-image: url('img/wait.png'); background-position: center bottom; background-size: cover;">
+                                </div><div data-pg-class-style="foto_kolektiv" class="rounded-lg h-full w-full sm:h-auto sm:w-8/12 sm:pt-72 sm:max-h-full sm:min-h-full pt-80" style="background-image: url('img/wait.png'); background-position: center bottom; background-size: cover;">
 </div> </a> 
                         </div>                         
                     </div>                     
