@@ -30,5 +30,9 @@
         <classstyle name="pc_view" key="pc_view" class="hidden lg:flex"></classstyle>
         <classstyle key="pc_view_text" name="pc_view_text" class="hidden lg:flex flex-col" count="0"></classstyle>
         <classstyle key="mob_view_text" name="mob_view_text" class="lg:hidden flex flex-col" count="0"></classstyle>
+        <classstyle name="1text" key="1text" class="text-gray-400 text-sm lg:text-base"></classstyle>
+        <classstyle name="2text" key="2text" class="font-medium mb-2 text-2xl text-white lg:font-medium lg:text-3xl"></classstyle>
+        <classstyle name="4text" key="4text" class="font-semibold mb-2 text-2xl text-gray-700 lg:font-medium lg:text-3xl"></classstyle>
+        <classstyle name="3text" key="3text" class="text-gray-500 text-sm lg:text-base"></classstyle>
     </classstyles>
 </project>
